@@ -1,21 +1,19 @@
 {
-    "name": "Getting Started Example",
+    "name": "Stop Spam",
     "version": "1.0",
-    "description": "Build an Extension!",
+    "description": "Browser extension which detects the malicious URLs and prevents the user from proceeding with it.",
     "permissions": [
-        "storage",
         "webRequest",
-        "*://*.google.com/"
+        "webRequestBlocking",
+        "<all_urls>"
     ],
     "background": {
-      "scripts": ["background.js"],
-      "persistent": false
+        "scripts": [
+            "background.js"
+        ]
     },
-    "page_action": {
-      "default_popup": "popup.html",
-      "default_icon": {
-        "16": "images/camera.png"
-      }
-    },
+    "web_accessible_resources": [
+        "test.html"
+    ],
     "manifest_version": 2
-  }
+}
