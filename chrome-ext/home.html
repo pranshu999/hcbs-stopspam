@@ -34,6 +34,30 @@
             font-size: 500%;
             color: white;
         }
+
+        #btn-yes {
+            margin-right: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            background: red;
+            padding: 12px;
+            border: 2px solid white;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.4s ease 0s;
+        }
+
+        .btn:hover {
+            color: red;
+            background: white;
+            transition: all 0.4s ease 0s;
+        }
     </style>
 </head>
 
@@ -50,6 +74,8 @@
         <div class="flex-container">
             <div>
                 <p style="color: white;font-size: 150%;">Continue anyway to <a id="spamUrl" href=""></a> ?</p>
+                <p><a class="btn" id="btn-yes">Yes, visit</a><a class="btn" id="btn-no">No,
+                        close</a></p>
             </div>
         </div>
     </div>
