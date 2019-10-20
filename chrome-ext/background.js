@@ -6,7 +6,7 @@ chrome.webRequest.onBeforeRequest.addListener(
     details => {
         if (checkUrl(details.url)) {
             console.log("bhia gadbad se..");
-            return { redirectUrl: chrome.runtime.getURL("test.html") + "?itsaspam=" + details.url };
+            return { redirectUrl: chrome.runtime.getURL("home.html") + "?itsaspam=" + details.url };
         } else {
             console.log("shi se...");
         }
