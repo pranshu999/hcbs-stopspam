@@ -7,13 +7,18 @@
         "webRequestBlocking",
         "<all_urls>"
     ],
+    "page_action": {
+        "default_icon": {
+            "16": "images/success.png"
+        }
+    },
     "background": {
         "scripts": [
             "background.js"
         ]
     },
     "web_accessible_resources": [
-        "test.html"
+        "home.html"
     ],
     "manifest_version": 2
 }
