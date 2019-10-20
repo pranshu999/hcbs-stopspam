@@ -1,39 +1,58 @@
-<html>
-    <head>
-        <title>Home page</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-       <style>
-           body {
-               background-color: red;
-           }
-           .flex-container {
-               display: flex;
-               flex-flow: row wrap;
-               justify-content: left;
-               
-           }
-           .container {
-                margin: 150px 150px 0px 150px;
-                
-           }
-           .fa-window-close {
-               font-size: 500%;
-               color: white;
-               
-           }
-       </style>
-    </head>
-    <body>
-        <div class="container"> 
-            <div class="flex-container">
-                    <div><i class="fa fa-window-close" aria-hidden="true"></i></div>
-            </div>
-            <div class="flex-container">
-                <div><p style="color: white;font-size: 200%;">URL you requested was malicious.</p></div>
-            </div>
-            <div class="flex-container">
-                <div><p style="color: white;font-size: 150%;">Continue anyway?</p></div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="spam-utility.js"></script>
+    <title>Stop Spam</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-color: red;
+        }
+
+        .flex-container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+            -webkit-box-pack: left;
+            -ms-flex-pack: left;
+            justify-content: left;
+        }
+
+        .container {
+            margin: 150px 150px 0px 150px;
+        }
+
+        .fa-window-close {
+            font-size: 500%;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="flex-container">
+            <div><i class="fa fa-window-close" aria-hidden="true"></i></div>
+        </div>
+        <div class="flex-container">
+            <div>
+                <p style="color: white;font-size: 200%;">URL you requested was malicious.</p>
             </div>
         </div>
-    </body>
+        <div class="flex-container">
+            <div>
+                <p style="color: white;font-size: 150%;">Continue anyway to <a id="spamUrl" href=""></a> ?</p>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
